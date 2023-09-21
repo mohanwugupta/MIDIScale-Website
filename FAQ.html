@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MidiScale</title>
+    <link rel="icon" href="img/MidiScale_Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/FAQ.css" />
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6">
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6', { action: 'submit' }).then(function (token) {
+                console.info("got token: " + token);
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZQHW85XH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KKZQHW85XH');
+    </script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YKZ165W0L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9YKZ165W0L');
+</script>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html">
+                <img src="img/MidiScale_Logo.png" alt="MIDIScale Logo" style="width: 100px; height: 50px;">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#About">About</a></li>
+                <li><a href="index.html#MIDI">MIDI</a></li>
+                <li><a href="index.html#Founder">Founder</a></li>
+                <li><a href="index.html#Philosophy">Philosophy</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="flex-containter">
+
+        <header class="hero">
+
+            <div class="flex-child">
+
+                <h1 class="primary-title MIDIScale">MIDIScale's FAQ</h1><br />
+
+            </div>
+
+    </div>
+    </header>
+
+
+    </div>
+    <main>
+        <section class="info">
+            <div class="flex-container spacing">
+                <div class="faq-question">
+                    <h2>It says that you are not a trusted publisher...</h2>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p> We are in the process of becoming a trusted publisher with both Microsoft
+                        and Apple. If you have any concerns about the software, please email us at
+                        info@midiscale.com.
+                    </p>
+                </div>
+                <hr />
+                <div class="faq-question">
+                    <h2>I can't install the software on my MAC...</h2>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>If you follow these
+                        <a
+                            href="https://support.apple.com/guide/mac-help/apple-cant-check-app-for-malicious-software-mchleab3a043/mac">instructions</a>,
+                        you can install it on your MAC. Once we are a trusted publisher with MAC, you won't have to do
+                        this.
+                    </p>
+                </div>
+                <hr />
+
+                <div class="faq-question">
+                    <h2>Do I need a MIDI controller to use MIDIScale?</h2>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No MIDI controller is necessary! Although we suggest one, you can start
+                        learning using your computer keyboard right away.
+                    </p>
+                </div>
+
+                <hr />
+                <div class="faq-question">
+                    <h2>Do I need a MIDI controller to use MIDIScale?</h2>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No MIDI controller is necessary! Although we suggest one, you can start
+                        learning using your computer keyboard right away.
+                    </p>
+                </div>
+
+                <hr />
+                <div class="faq-question">
+                    <h2>How do I know MIDIScale is for me?</h2>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>If you are trying to learn the piano, then MIDIScale is for you!
+                        There's a 14 day free trial, and if you don't like it, you can cancel any time.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+
+        // hamburger nav bar
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+
+        // //recaptcha
+        // function onSubmit(token) {
+        //     document.getElementById("form").submit();
+        // }
+
+
+        // FAQ
+        // allows for toggling to see answer or not
+        const questions = document.querySelectorAll('.faq-question');
+        const toggleIcons = document.querySelectorAll('.toggle-icon');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('show');
+                if (answer.classList.contains('show')) {
+                    answer.style.display = 'block';
+                    question.querySelector('.toggle-icon').textContent = '-';
+                } else {
+                    answer.style.display = 'none';
+                    question.querySelector('.toggle-icon').textContent = '+';
+                }
+            });
+        });
+
+        toggleIcons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                const answer = icon.parentElement.nextElementSibling;
+                answer.classList.toggle('show');
+                if (answer.classList.contains('show')) {
+                    answer.style.display = 'block';
+                    icon.textContent = '-';
+                } else {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                }
+            });
+        });
+
+
+    </script>
+
+
+</body>

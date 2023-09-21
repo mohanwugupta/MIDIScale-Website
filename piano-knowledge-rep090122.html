@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MidiScale</title>
+    <link rel="icon" href="img/MidiScale_Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css" />
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6">
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6', { action: 'submit' }).then(function (token) {
+                console.info("got token: " + token);
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZQHW85XH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KKZQHW85XH');
+    </script>
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YKZ165W0L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9YKZ165W0L');
+</script>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html">
+                <img src="img/MidiScale_Logo.png" alt="MIDIScale Logo" style="width: 100px; height: 50px;">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#About">About</a></li>
+                <li><a href="index.html#MIDI">MIDI</a></li>
+                <li><a href="index.html#Founder">Founder</a></li>
+                <li><a href="index.html#Philosophy">Philosophy</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="flex-containter">
+
+    </div>
+    <main>
+        <section class="info">
+            <div class="flex-container spacing">
+
+                <h2 data-category="Piano Learning">
+                    <a href="piano-knowledge-rep090122.html"></a>
+                    Piano Knowledge Representation and Generalization
+                </h2>
+                <p class=text>
+                    We don’t know how piano knowledge is represented in the mind;
+                    how does learning on one piece transfer to learning on another piece;
+                    Can we use AI to generate practice exercises to get the user from learning state A
+                    to desired learning state B. <br><br>
+
+                    These ideas are the forefront of research and will modernize the learning experience.
+                    So thank you again for coming on this journey with me and paving the way to make
+                    learning a more equitable experience. <br><br>
+
+                    Lebron James, one of the best basketball players of all time, and Jacob Collier,
+                    a highly awarded musician, are at the edge of human ability in their respective fields.
+                    Critical to accomplishing their striking feats are their finely tuned motor skills that
+                    have been honed through rigorous practice. This prompts two questions, are some forms of
+                    practice better than others and how do representations of knowledge change over time? Piano
+                    playing provides an ideal case study for investigating how humans learn a complex motor skill.
+                    To play moving melodies and crisp chords learners must train their mind and hands to accomplish
+                    this goal. What is the optimal training regime to get to this point? There are several
+                    hypotheses that may achieve this goal: 1) The low-generalization hypothesis assumes practice
+                    only benefits learning on the practiced exercise or piece at hand. 2) The high-generalization
+                    hypothesis assumes that all practice is equally beneficial. 3) On the other hand, a skill
+                    hypothesis assumes that there are specific skills that can be trained and generalized to
+                    enhance future learning. In the simplest form, these skills take the form of rhythmicity,
+                    playing notes on time, and tonal accuracy, playing the correct note. Concretely, these different
+                    forms of practice may look like 1) someone who practices on a variety of piano pieces to practice
+                    as many scenarios as possible, 2) someone who only practices on one piano piece, 3) someone
+                    who practices on specific skills like rhythmicity and timing in a variety of contexts.
+                    Currently, there has been no systematic study probing different training styles that tap into
+                    humans’
+                    cognitive architecture to learn the piano. Furthering our understanding of how our mind’s
+                    cognitive architecture digests information learned during practice is key to enhancing
+                    pedagogy and figuring out how the mind represents knowledge. In Aim 1, we will address a
+                    fundamental question of how piano knowledge is represented over time and the structure of
+                    this knowledge. Aim 2 will address how prior learning generalizes and affects future learning.
+                    Aim 3 will investigate how personalized exercises can be generated to prevent learners from
+                    generating future errors. All findings will be shared through publications and conference
+                    presentations. Data, code, and the pre-registration of the study will be uploaded to a public
+                    repository such as OSF. <br><br>
+
+                    Aim 1: Changes in piano knowledge representation. As a learner increases their skill in piano, how
+                    they represent knowledge about playing will change and understanding these changes will lay
+                    foundational work for understanding how to optimize the future practice of a learner. We can
+                    understand how knowledge representation changes over time by examining the errors learners make.
+                    Take the simple example of playing a C-major chord. The first time a learner plays it, they could
+                    make an error due to not fully knowing what notes make up the C-major chord. Overtime, errors due to
+                    this nature significantly decrease in likelihood. Other possible errors may arise due to selecting
+                    the wrong hand configuration to play the chord or through a motor execution error. Learning must
+                    occur in all of these cases to play the C-major chord. The non-generalization hypothesis predicts
+                    that learning C-major in one exercise will fail to transfer to a future exercise. The
+                    high-generalization hypothesis predicts that learning C-major in one exercise will generalize to all
+                    situations and to future learning of similar chords. The skill hypothesis predicts that learning
+                    C-major in one context will generalize only to contexts in which the tonal position and timing are
+                    similar across exercises. This simple example can be expanded to other necessary skills like
+                    learning a finger tuck, a motor skill necessary for playing scales. Using a dataset from Melodics, a
+                    software that teaches piano using exercises, we will categorize types of errors as either tonal
+                    (e.g. playing E instead of C) or as timing errors. In Melodics, users complete diverse exercises
+                    that train different motor and musical skills. The figure shows what participants see while playing
+                    an exercise. The learner has a physical keyboard while they look at virtual notes that move in time
+                    towards them. The learner must play current notes while looking ahead to prepare to play future
+                    notes. Inevitably while learning new exercises, the learner will make errors. For new exercises that
+                    employ priorly learned chords, the low-generalization hypothesis predicts errors will be high at the
+                    beginning of each exercise because prior learning will not transfer to new exercises. The
+                    high-generalization hypothesis predicts that as the amount of overall practice time increases,
+                    errors will decrease for all pieces of the same difficulty. The skill hypothesis predicts two
+                    possible outcomes. 1) tonal and timing learning increase in parallel and both timing and tonal
+                    errors reduce over time. 2) tonal learning must occur before timing learning and once tonal errors
+                    have sufficiently reduced, timing errors will then decrease. These findings will reveal how changes
+                    in errors are reflective of internal representations of piano skill.<br><br>
+
+                    Using the categorized errors, we will examine how prior experience and practice affect future
+                    performance. To do this, we will train an artificial neural network (ANN) to predict learners’
+                    future errors on a novel exercise. The ANN will train on learners’ previously practiced exercises.
+                    Once the ANN is trained on the practice history of individuals, it will be used to predict future
+                    behavior of learners on novel exercises: 1) Tonal errors, 2) timing errors. Further, based on a
+                    learner’s performance on a novel exercise, we can ask the ANN to predict, 3) how long has the
+                    learner been practicing, and 4) have they practiced on a specific exercise. Successful prediction on
+                    the first two metrics will support the conclusions that learning sub-skills like tonal and timing,
+                    are essential for piano learning, supporting the skill-hypothesis. Successful prediction of the last
+                    two metrics would support the high-generalization hypothesis. This will be the first
+                    characterization of piano learning across thousands of people and these analyses will enable future
+                    insights on piano pedagogy. Further, this work will be an initial step to creating a robot that will
+                    learn to play the piano like humans do. <br><br>
+
+                    Aim 2: Learning generalization. For the past century, piano learners have been using Hanon exercises
+                    that are supposed to train essential piano motor skills2. However, these exercises have not been
+                    validated and it is unclear if/what specific sub-skills they are training. Taking the simple example
+                    from earlier of learning how to play a C-major chord, does learning how to play this chord help with
+                    learning to play other chords like D-major or B-minor? Using the ANN trained in aim 1, we can
+                    investigate what exercises and learned information are necessary for predicting future performance.
+                    Concretely, to predict future tonal errors, what information did the ANN use to make that
+                    prediction? How the ANN represents information cannot be interpreted directly so we must infer how
+                    it makes decisions by changing the information it was trained on. We will ablate timing errors by
+                    artificially correcting them in the dataset the ANN is trained on. If this information is important
+                    for the ANN to make predictions about tonal errors, this will indicate that tonal knowledge is
+                    necessary to learn timing information. We will use this same methodology to probe timing knowledge
+                    as well. There are a couple of possible outcomes: 1) timing errors influence the ANN’s ability to
+                    predict future tonal errors and vice versa. 2) Timing errors fail to influence the ANN’s ability to
+                    predict future tonal errors and vice versa. If the first outcome is true, this would suggest that
+                    these two skills may be part of a hierarchical structure of skill learning. However, if the second
+                    outcome is true, this would suggest that learning timing and tonal skill learning are orthogonal to
+                    each other and develop independently. Ultimately, these findings will further our understanding of
+                    what information is essential for superior future performance. <br><br>
+
+                    Aim 3: Generating Optimal Practice. An essential part of practice is ensuring that errors are not
+                    repeated in the future. What would be the optimal practice to achieve this goal? Ideally,
+                    personalized tutoring and practice for each learner is superior to general curricula. Using our
+                    findings from aims 1 & 2, we will create an ANN that recommends exercises that will rectify
+                    prevalent errors in a learner. This recommender system is similar to the one that video streaming
+                    services like Netflix use to recommend new movies based on what the users have watched in the past.
+                    For example, if a learner is generating many errors in exercises that are in the scale of C-major,
+                    the ANN will recognize this and assign exercises to rectify these errors. However, in piano
+                    learning, the recommender system would be limited to an existing set of exercises and would not take
+                    into account musical preferences of the learner. To further expand personalized training, we will
+                    build an ANN that can generate an infinite number of exercises that develop learning of specific
+                    skills. Further, the exercises’ style will be to the learner’s preference. For example, if a learner
+                    likes jazz and would prefer to have all of their exercises in a jazz style, we could transform
+                    exercises like the Hanon exercises to fit their preference: jazz Hanon. <br><br>
+
+                    References: [1] Krumhansl, C. L. (2000). Psychological bulletin.[2] Hanon (1900). New York: G.
+                    Schirmer.
+
+
+                </p>
+
+            </div>
+        </section>
+
+        <header class="hero">
+            <div class="flex-form">
+
+                <div id="custom-substack-embed" class="flex-form"></div>
+            </div>
+            <p class="mailInfo"> Join the mailing list to gain access
+                to our bi-weekly newsletter and software updates! </p>
+            </p>
+            <p class="reCAPTCHA">
+                This site is protected by reCAPTCHA and the Google
+                <a href=”https://policies.google.com/privacy”>Privacy Policy</a> and <a
+                    href=”https://policies.google.com/terms”>Terms of Service</a> apply.
+            </p>
+            </form>
+            </div>
+        </header>
+
+    </main>
+
+    <script>
+
+        window.CustomSubstackWidget = {
+            substackUrl: "mohangupta.substack.com",
+            placeholder: "example@gmail.com",
+            buttonText: "Subscribe",
+            theme: "custom",
+            colors: {
+                primary: "#FF7996",
+                input: "#E1CE0000",
+                email: "#000000C6",
+                text: "#000000",
+            }
+        };
+        // hamburger nav bar
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+
+        // //recaptcha
+        // function onSubmit(token) {
+        //     document.getElementById("form").submit();
+        // }
+
+
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+</body>

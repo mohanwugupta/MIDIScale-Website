@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="version 0.3" />
+    <title>MidiScale</title>
+    <link rel="icon" href="img/MidiScale_Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6', { action: 'submit' }).then(function (token) {
+                console.info("got token: " + token);
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZQHW85XH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KKZQHW85XH');
+    </script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YKZ165W0L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9YKZ165W0L');
+</script>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html">
+                <img src="img/MidiScale_Logo.png" alt="MIDIScale Logo" style="width: 100px; height: 50px;">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#MIDI">MIDI</a></li>
+                <li><a href="#Founder">Founder</a></li>
+                <li><a href="#Philosophy">Philosophy</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="flex-containter">
+
+        <header class="hero">
+
+            <div class="flex-child">
+
+                <h1 class="primary-title MIDIScale"> Learn The Piano
+                </h1>
+                <h1 class="primary-title MIDIScale">with MidiScale. </h1><br />
+                <h1 class="primary-title MIDIScale">DOWNLOAD NOW </h1>
+                <h1 class="primary-title MIDIScale">AND TRY FOR FREE! </h1>
+
+                <div id="buttonContainer">
+                    <button id="windowsButton">Windows</button>
+                    <button id="macButton">Mac</button>
+                </div>
+
+
+            </div>
+            
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/WCcImzaughA" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <section class="how-to">
+                <h2>How To Start</h2>
+                <div class="step">
+                    <h3>Step 1</h3>
+                    <p class=text>Download MIDIScale.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2</h3>
+                    <p class=text>Create an account.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3</h3>
+                    <p class=text>Plug-in your MIDI keyboard.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 4</h3>
+                    <p class=text>Play the tutorial.</p>
+                </div>
+            </section>
+    </div>
+    </header>
+
+    </div>
+    <main>
+
+        <section class="info">
+            <div class="flex-container2 spacing">
+                <h2 id="About" class="section-title">About</h2>
+                <p class=text>
+                    We're a platform for learning the piano.
+                    Our goal is to understand how you learn and provide personalized feedback.
+                    Currently, we are on the Alpha 0.2 release.
+                    We provide the same amount of feedback that our competitors do:
+                    Which notes you played correctly and incorrectly, and
+                    a summary of how well you did after each exercise.
+                    However, we are working on a new way to give feedback.
+                    Think of us as your future personal tutor.
+                    As you learn, we learn more about how you learn
+                    and will use this data to enhance how we give feedback to you.
+                    We will employ carefully crafted cognitive learning models
+                    that will recommend what you should learn next and
+                    help design a learning course specifically for you.
+                </p>
+
+                <br>
+
+                <h2 id="MIDI" class="section-title">What is MIDI</h2>
+                <p class="text">
+                    MIDI is a data format so that your computer understands
+                    what notes are being played. For example, if you press
+                    C5 on your MIDI controller, your computer will know the
+                    velocity of the keypress and that you played C5. It can
+                    then play C5 on your digital instrument of choice. We
+                    can also use MIDI to interpret computer
+                    keyboard presses as well. This makes the startup cost
+                    minimal for a new learner.
+                </p>
+
+                <br>
+
+                <h2 id="Founder" class="section-title">Founder</h2>
+                <p class="text">
+                    Mohan Gupta is a Cognitive Psychology PhD candidate at
+                    the University of California, San Diego. He investigates
+                    what are the best ways to learn, why those are the best
+                    ways, and can he use math to predict what people will
+                    learn. He tried learning the piano through piano learning
+                    software but realized it lacked a personalized experience
+                    and the software had no idea what he was learning. Thus,
+                    with his expertise as a premier learning scientist, he set
+                    out to make a piano learning software that actually measures
+                    learning and uses that to help the user.
+
+                </p>
+
+                <br>
+
+                <h2 id="Philosophy" class="section-title">Company Philosophy</h2>
+                <p class="text">
+                    We want to make learning an equitable experience. Top class
+                    learning should be for everyone, regardless of how much money
+                    one has. Everyday, we strive to apply the latest findings in
+                    learning science so that you can learn more, faster, and stay
+                    motivated along the way. Everyone starts in different learning
+                    states and makes different errors. We accept these individual
+                    differences and wield them to provide a modern learning
+                    experience. We aim to be the future of learning.
+
+                </p>
+
+
+                <h2 id="Contact" class="section-title">Contact</h2>
+                <p class="text">
+                    Have questions or suggestions? Email us at:
+                    info<span class="spamprotection">CHARACTER SEQUENCE</span>@midiscale.com.
+
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+
+
+        // hamburger nav bar
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+
+        // //recaptcha
+        // function onSubmit(token) {
+        //     document.getElementById("form").submit();
+        // }
+
+    </script>
+
+    <script>
+        window.CustomSubstackWidget = {
+            substackUrl: "mohangupta.substack.com",
+            placeholder: "example@gmail.com",
+            buttonText: "Subscribe",
+            theme: "custom",
+            colors: {
+                primary: "#FF7996",
+                input: "#E1CE0000",
+                email: "#000000C6",
+                text: "#000000",
+            }
+        };
+
+        const windowsButton = document.querySelector('#windowsButton');
+        windowsButton.addEventListener('click', function () {
+            // const fileUrl = 'https://storage.googleapis.com/www.midiscale.com/downloads/windows/MIDIScale0.1.exe';
+            const fileUrl = 'https://www.midiscale.com/downloads/windows/MIDIScale.exe';
+            const fileName = 'MIDIScale.exe';
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const a = document.createElement('a');
+                    const url = window.URL.createObjectURL(blob);
+                    a.href = url;
+                    a.download = fileName;
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(error => console.error(error));
+        });
+
+        const macButton = document.querySelector('#macButton');
+        macButton.addEventListener('click', function () {
+            // const fileUrl = 'https://storage.googleapis.com/www.midiscale.com/downloads/windows/MIDIScale0.1.exe';
+            const fileUrl = 'https://www.midiscale.com/downloads/mac/MIDIScale.zip';
+            const fileName = 'MIDIScale.zip';
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const a = document.createElement('a');
+                    const url = window.URL.createObjectURL(blob);
+                    a.href = url;
+                    a.download = fileName;
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
+</body>

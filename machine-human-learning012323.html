@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MidiScale</title>
+    <link rel="icon" href="img/MidiScale_Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css" />
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6">
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6', { action: 'submit' }).then(function (token) {
+                console.info("got token: " + token);
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZQHW85XH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KKZQHW85XH');
+    </script>
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YKZ165W0L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9YKZ165W0L');
+</script>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html">
+                <img src="img/MidiScale_Logo.png" alt="MIDIScale Logo" style="width: 100px; height: 50px;">
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#About">About</a></li>
+                <li><a href="index.html#MIDI">MIDI</a></li>
+                <li><a href="index.html#Founder">Founder</a></li>
+                <li><a href="index.html#Philosophy">Philosophy</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="flex-containter">
+
+    </div>
+    <main>
+        <section class="info">
+            <div class="flex-container spacing">
+
+                <h2 data-category="Piano Learning">
+                    Machine Learning and Human Learning
+                </h2>
+                <p class=text>
+                    Machine learning is a powerful tool for understanding and predicting patterns in data, as evidenced
+                    by DALL-E-2 and most recently ChatGTP-3. Despite these amazing feats, I’m of the opinion that they
+                    are not well-suited for understanding human learning.
+
+                    The primary issue with machine learning is that they are essentially black boxes where we don’t know
+                    why they’re making the decisions they make. This makes them hard to interpret and hard to improve
+                    upon unless you drastically change the underlying structure of the algorithm. For example, if a
+                    machine learning algorithm consistently makes an incorrect prediction, we would have no idea why. On
+                    the other hand, simple psychological models where we understand what each parameter corresponds to,
+                    it becomes much easier to understand why it makes the predictions it makes and further, if there are
+                    deviations in the prediction it’s relatively easy to iterate and improve upon the model.
+
+                    Another large issue is data. Machine learning is data hungry. Hungrier than the cookie monster is
+                    for cookies. This is why image and text generation have been noticeably exceptional feats in machine
+                    learning, there’s heaps upon heaps of data. Humans make a lot of images on the internet (~7 billion
+                    per day in the past decade) and we’ve produced a lot of text in our entire history, most of which
+                    has been uploaded to the internet. This allowed for astounding training set sizes. DALL-E-2 was
+                    trained on about 400 million images. ChatGTP-3 was trained on 300 billion words. That’s a lot of
+                    data, and no analogous dataset exists in educational contexts and education data is hierarchical
+                    rather than discrete, making it more complex.
+
+                    Further, the human learning system isn’t a monolith. Multiple systems exist within the mind and
+                    these systems likely have different rules that they play by. For example, learning math uses a
+                    different system than, say learning history or literature. Sure, both require the memorization of
+                    information, however, how that information is learned, processed, and represented is going to be
+                    different in each system. I think it is very unlikely that a machine learning algorithm used to
+                    predict how well someone learns math will also work to predict how well someone will learn history
+                    and it will not be obvious why. To make it even more complicated, multiple systems are used to learn
+                    tasks or information. For example, for motor tasks, like the piano, there are at least two systems
+                    involved in learning: the implicit motor system and the explicit declarative system. Thus, expecting
+                    the machine learning algorithm to either organize itself in a similar fashion or organize itself in
+                    such a way that its outputs are the same is a high bar to set that won’t be reached in the near
+                    future. This is also a problem for psychological models. Learning systems need to be represented in
+                    different ways, however, with psychological models, it is much easier to separate the contributions
+                    of each system to the performance output and model each individually within a larger system.
+
+                    Overall, there are several advantages that I think psychological models will have over machine
+                    learning when trying to predict and enhance human learning. Since the space lacks large amounts of
+                    data and each learner can only generate so much, this disadvantages machine learning. In future
+                    posts, I’ll discuss how multiple learning systems interact in motor learning and the advantages of
+                    using data driven approaches to learning. .
+
+
+                </p>
+
+            </div>
+        </section>
+
+        <header class="hero">
+            <div class="flex-form">
+
+                <div id="custom-substack-embed" class="flex-form"></div>
+            </div>
+            <p class="mailInfo"> Join the mailing list to gain access
+                to our bi-weekly newsletter and software updates! </p>
+            </p>
+            <p class="reCAPTCHA">
+                This site is protected by reCAPTCHA and the Google
+                <a href=”https://policies.google.com/privacy”>Privacy Policy</a> and <a
+                    href=”https://policies.google.com/terms”>Terms of Service</a> apply.
+            </p>
+            </form>
+            </div>
+        </header>
+
+    </main>
+
+    <script>
+
+        window.CustomSubstackWidget = {
+            substackUrl: "mohangupta.substack.com",
+            placeholder: "example@gmail.com",
+            buttonText: "Subscribe",
+            theme: "custom",
+            colors: {
+                primary: "#FF7996",
+                input: "#E1CE0000",
+                email: "#000000C6",
+                text: "#000000",
+            }
+        };
+        // hamburger nav bar
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+
+        // //recaptcha
+        // function onSubmit(token) {
+        //     document.getElementById("form").submit();
+        // }
+
+
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+</body>
