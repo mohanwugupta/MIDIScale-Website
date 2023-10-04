@@ -177,9 +177,9 @@ section {
 
 a {
     /* color: #ff7996; */
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
+    /* color: white; */
+    text-decoration: underline;
+    /* text-transform: uppercase; */
 }
 
 a:hover {

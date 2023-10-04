@@ -76,7 +76,7 @@ hr {
 
 .toggle-button {
     position: absolute;
-    top: 1.33rem;
+    top: 2rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -464,7 +464,6 @@ span {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 90%; 
     }
 
 }
