@@ -590,3 +590,48 @@ span {
     align-items: center;
     flex-direction: column;
 }
+
+
+.column {
+    flex: 1;
+    display: inline-block;
+    margin: 0;
+    padding: .3em;
+    border: 2px solid white;
+    align-items: top;
+    text-align: center;
+}
+
+/* Apply styles to each column */
+#music-theory-column {
+    background-color: #2B2D42;
+    /* Background color for Learning */
+    color: #F3E333;
+    /* Text color for Learning */
+}
+
+#midi-controllers-column {
+    background-color: #E70F72;
+    /* Background color for MIDI Controllers */
+}
+
+#learning-column {
+    background-color: #2B2D42;
+    /* Background color for Learning */
+    color: #F3E333;
+    /* Text color for Learning */
+}
+
+#education-column {
+    background-color: #E70F72;
+    font-size: clamp(.5rem, 4vw, 1.5rem);
+    padding: .5rem;
+    width: 100%; /* Ensure full width */
+    /* Background color for MIDI Controllers */
+}
+
+.flex-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    /* flex-direction: column; */
+}
