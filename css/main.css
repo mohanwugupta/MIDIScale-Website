@@ -76,7 +76,7 @@ hr {
 
 .toggle-button {
     position: absolute;
-    top: 2rem;
+    top: 1.3rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -94,6 +94,20 @@ hr {
 
 @media (max-width: 768px) {
     .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flex-container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flex-container3 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -217,15 +231,22 @@ a:hover {
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
-.section-title {
-    font-size: 6rem;
-    font-size: clamp(2rem, 2.5rem, 4rem);
+.category-title {
+    font-size: clamp(1rem, 2rem, 2.5rem);
     line-height: 1.1;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Bricolage Grotesque', sans-serif;
+    text-decoration: underline;
+}
 
-
+.section-title {
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin-right: 1.5rem;
 }
 
 .header {
@@ -365,7 +386,15 @@ span {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Bricolage Grotesque', sans-serif;
+}
 
+.blog-text {
+    font-size: clamp(.5rem, 1.5vw, 1.5rem);
+    width: clamp(65%, 95%, 1400px);
+    position: center;
+    /* margin-left: auto; */
+    margin-right: auto;
+    font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .grecaptcha-badge {
@@ -451,10 +480,10 @@ span {
         padding-left: 2.5em;
         padding-right: 2.5em;
         align-items: center;
-        width: 100%; 
+        width: 100%;
         /* center the items regardless of the screen width */
-        
-        
+
+
         /* Full width on smaller screens */
     }
 
@@ -583,6 +612,7 @@ span {
     }
 
 
+
 }
 
 .flex-container2 {
@@ -595,11 +625,11 @@ span {
 .column {
     flex: 1;
     display: inline-block;
-    margin: 0;
+    margin: .4rem;
     padding: .3em;
     border: 2px solid white;
     align-items: top;
-    text-align: center;
+
 }
 
 /* Apply styles to each column */
@@ -619,19 +649,21 @@ span {
     background-color: #2B2D42;
     /* Background color for Learning */
     color: #F3E333;
+    
     /* Text color for Learning */
 }
 
 #education-column {
     background-color: #E70F72;
     font-size: clamp(.5rem, 4vw, 1.5rem);
-    padding: .5rem;
-    width: 100%; /* Ensure full width */
+    width: 100%;
+    /* Ensure full width */
     /* Background color for MIDI Controllers */
 }
 
 .flex-container3 {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* flex-direction: column; */
 }
