@@ -92,7 +92,7 @@ hr {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .flex-container {
         display: flex;
         justify-content: center;
@@ -249,6 +249,23 @@ a:hover {
     margin-right: 1.5rem;
 }
 
+.section-title-about {
+    font-size: clamp(1rem, 3.5rem, 6rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.section-title-team {
+    font-size: clamp(1rem, 3.5rem, 6rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /* margin-right: 1.5rem; */
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -388,6 +405,16 @@ span {
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
+.about-text {
+    font-size: clamp(.5rem, 4vw, 2rem);
+    width: clamp(65%, 95%, 1400px);
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /* color: black; */
+}
+
 .blog-text {
     font-size: clamp(.5rem, 1.5vw, 1.5rem);
     width: clamp(65%, 95%, 1400px);
@@ -438,7 +465,7 @@ span {
     /* box-shadow: 0 5px #008CBA; */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
 
     #windowsButton,
     #macButton {
@@ -582,7 +609,7 @@ span {
     margin-top: 10px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 968px) {
 
     /* For screens larger than 768px */
     /* For screens larger than or equal to 769px */
@@ -666,4 +693,21 @@ span {
     /* justify-content: center; */
     /* align-items: flex-start; */
     /* flex-direction: column; */
+}
+
+.circle-frame {
+    width: 200px; /* Set the desired width of the circle frame */
+    height: 200px; /* Set the desired height of the circle frame */
+    border-radius: 50%; /* Create a circular shape with a 50% border-radius */
+    overflow: hidden; /* Clip the image to the circular shape */
+
+    /* You can also add other styles like border or box-shadow if desired */
+    border: 2px solid #333;
+    box-shadow: 0 0 5px #888;
+}
+
+.circle-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the circular frame */
 }

@@ -121,6 +121,17 @@
                             Find the most affordable MIDI controllers for your needs!
                         </p>
                         <hr>
+
+                        <h2 class="section-title" data-category="Piano Learning">
+                            <a href="midi-controller-aspects110823.html">
+                                Different Aspects of a MIDI Keyboard
+                            </a>
+                        </h2>
+                        <p class=blog-text id="midi-controllers-column">
+                            Learn about all of the different features of a MIDI keyboard 
+                            to understand which one may be the best for you. 
+                        </p>
+                        <hr>
                     </ul>
                 </div>
                 <!-- Piano Learning column -->
@@ -194,7 +205,7 @@
 
                     </ul>
                 </div>
-                
+
                 <!-- Education Column -->
                 <div class="column" id="education-column">
                     <h2 class="category-title">Education</h2>
@@ -241,38 +252,46 @@
 
     <script>
 
+
+        // hamburger nav bar
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
         // Define a list of blog categories
         const categories = ['Music Theory', 'MIDI Controllers', 'Piano Learning', 'Education'];
 
-        // Add an event listener to the category filter dropdown
-        categoryFilter.addEventListener('change', () => {
-            // Get the selected category
-            const selectedCategory = categoryFilter.value;
+        // // Add an event listener to the category filter dropdown
+        // categoryFilter.addEventListener('change', () => {
+        //     // Get the selected category
+        //     const selectedCategory = categoryFilter.value;
 
-            // Filter and categorize the posts into the appropriate columns
-            blogSection.querySelectorAll('h2').forEach(postTitle => {
-                const category = postTitle.getAttribute('data-category');
-                const postContainer = postTitle.parentElement;
+        //     // Filter and categorize the posts into the appropriate columns
+        //     blogSection.querySelectorAll('h2').forEach(postTitle => {
+        //         const category = postTitle.getAttribute('data-category');
+        //         const postContainer = postTitle.parentElement;
 
-                if (selectedCategory === 'All' || category.includes(selectedCategory)) {
-                    // Display the post in the appropriate column
-                    switch (category) {
-                        case 'Music Theory':
-                            document.getElementById('music-theory-column').querySelector('ul').appendChild(postContainer);
-                            break;
-                        case 'MIDI Controllers':
-                            document.getElementById('midi-controllers-column').querySelector('ul').appendChild(postContainer);
-                            break;
-                        case 'Piano Learning':
-                            document.getElementById('learning-column').querySelector('ul').appendChild(postContainer);
-                            break;
-                        case 'Education':
-                            document.getElementById('learning-column').querySelector('ul').appendChild(postContainer);
-                            break;
-                    }
-                }
-            });
-        });
+        //         if (selectedCategory === 'All' || category.includes(selectedCategory)) {
+        //             // Display the post in the appropriate column
+        //             switch (category) {
+        //                 case 'Music Theory':
+        //                     document.getElementById('music-theory-column').querySelector('ul').appendChild(postContainer);
+        //                     break;
+        //                 case 'MIDI Controllers':
+        //                     document.getElementById('midi-controllers-column').querySelector('ul').appendChild(postContainer);
+        //                     break;
+        //                 case 'Piano Learning':
+        //                     document.getElementById('learning-column').querySelector('ul').appendChild(postContainer);
+        //                     break;
+        //                 case 'Education':
+        //                     document.getElementById('learning-column').querySelector('ul').appendChild(postContainer);
+        //                     break;
+        //             }
+        //         }
+        //     });
+        // });
         window.CustomSubstackWidget = {
             substackUrl: "mohangupta.substack.com",
             placeholder: "example@gmail.com",
@@ -285,13 +304,7 @@
                 text: "#000000",
             }
         };
-        // hamburger nav bar
-        const toggleButton = document.getElementsByClassName('toggle-button')[0];
-        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
-        toggleButton.addEventListener('click', () => {
-            navbarLinks.classList.toggle('active');
-        });
 
         // //recaptcha
         // function onSubmit(token) {

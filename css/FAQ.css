@@ -85,7 +85,7 @@ hr {
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    top: 1.3rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -101,7 +101,7 @@ hr {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .flex-container {
         display: flex;
         justify-content: center;
