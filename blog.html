@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MidiScale</title>
+    <title>Blog | MIDIScale</title>
     <link rel="icon" href="img/MidiScale_Favicon_32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
@@ -90,161 +90,84 @@
 
     </div>
     <main>
-        <section class="info">
-            <div class="flex-container3 spacing">
-                <!-- music theory column -->
-                <div class="column" id="music-theory-column">
-                    <h2 class="category-title">Music Theory</h2>
-                    <ul class="post-list">
-                        <h2 class="section-title" data-category="music-theory-column">
-                            <a href="pop-music-theory101723.html">
-                                Unveiling the Magic of Pop Music Theory: Easy Piano Chords and Tunes for Beginners
-                            </a>
-                        </h2>
-                        <p class=blog-text id="music-theory-column">
-                            Learn about music theory in the context of pop music.
-                        </p>
-                        <hr>
-                    </ul>
+        <!-- Blog Header -->
+        <header class="blog-overview-header py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-4 fw-bold">MIDIScale Blog</h1>
+                        <p class="lead">Insights on piano learning, music theory, and educational research</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills category-filter justify-content-center mb-5">
+                            <li class="nav-item"><a class="nav-link active" href="#all">All</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#music-theory">Music Theory</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#piano-learning">Piano Learning</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#midi-controllers">MIDI Controllers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- MIDI Controller Column -->
-                <div class="column" id="midi-controllers-column">
-                    <h2 class="category-title">MIDI Controllers</h2>
-                    <ul class="post-list">
-                        <h2 class="section-title" data-category="Piano Learning">
-                            <a href="affordable-midi-controllers101723.html">
-                                The Most Affordable MIDI Controllers
-                            </a>
-                        </h2>
-                        <p class=blog-text id="midi-controllers-column">
-                            Find the most affordable MIDI controllers for your needs!
-                        </p>
-                        <hr>
+                <div class="row g-4">
+                    <!-- Music Theory Posts -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">Music Theory</span>
+                                <h2 class="card-title h5">
+                                    <a href="pop-music-theory101723.html">Unveiling the Magic of Pop Music Theory</a>
+                                </h2>
+                                <p class="card-text">Learn about easy piano chords and tunes for beginners.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">October 17, 2023</small>
+                            </div>
+                        </div>
+                    </div>
 
-                        <h2 class="section-title" data-category="Piano Learning">
-                            <a href="midi-controller-aspects110823.html">
-                                Different Aspects of a MIDI Keyboard
-                            </a>
-                        </h2>
-                        <p class=blog-text id="midi-controllers-column">
-                            Learn about all of the different features of a MIDI keyboard 
-                            to understand which one may be the best for you. 
-                        </p>
-                        <hr>
-                    </ul>
+                    <!-- Piano Learning Posts -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">Piano Learning</span>
+                                <h2 class="card-title h5">
+                                    <a href="interleaving100223.html">How to Learn the Piano Faster with the Interleaving Effect</a>
+                                </h2>
+                                <p class="card-text">The best way to learn piano chords for beginners.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">October 2, 2023</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MIDI Controllers Posts -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-info mb-2">MIDI Controllers</span>
+                                <h2 class="card-title h5">
+                                    <a href="midi-controller-aspects110823.html">Different Aspects of MIDI Keyboards</a>
+                                </h2>
+                                <p class="card-text">Learn about all of the different features of a MIDI keyboard.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">November 8, 2023</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more blog post cards -->
                 </div>
-                <!-- Piano Learning column -->
-                <div class="column" id="learning-column">
-                    <h2 class="category-title">Piano Learning</h2>
-                    <ul class="post-list">
-                        <h2 class="section-title" data-category="Piano Learning">
-                            <a href="interleaving100223.html">
-                                How to Learn the Piano Faster with the Interleaving Effect
-                            </a>
-                        </h2>
-                        <p class=blog-text id="learning-column">
-                            The best way to learn piano chords for beginners.
-                        </p>
-                        <hr>
-
-                        <h2 class="section-title" data-category="Piano Learning">
-                            <a href="what-is-ri050123.html">
-                                What is Reactive Inhibition and Why it Matters for Piano Learning
-                            </a>
-                        </h2>
-                        <p class=blog-text id="learning-column">
-                            Learn about what reactive inhibition is and how it affects
-                            piano performance and learning.
-                        </p>
-                        <hr>
-
-                        <h2 class="section-title" data-category="Piano Learning">
-                            <a href="interacting-learning020623.html">
-                                Interacting Learning Systems in Piano Learning
-                            </a>
-                        </h2>
-                        <p class=blog-text id="learning-column">
-                            Learn about how our different learning and memory systems and how they
-                            interact with each other while playing the piano.
-                        </p>
-                        <hr>
-
-                        <h2 class="section-title" data-category="Piano Learning">
-                            <a href="issue-piano-learning092922.html">
-                                The Issue with Piano Learning Apps:
-                                The Difference Between Scaffolding and Crutches in Learning
-                            </a>
-                        </h2>
-                        <p class=blog-text id="learning-column">
-                            Current piano learning apps use crutches to give the illusion of learning.
-                        </p>
-                        <hr>
-
-                        <h2 class="section-title" data-category="Piano Learning">
-                            <a href="when-motor-learning091622.html">
-                                When Does Motor Learning Occur?
-                            </a>
-
-                        </h2>
-                        <p class=blog-text id="learning-column">
-                            Does motor learning happen while you're performing the task or during breaks?
-                        </p>
-                        <hr>
-
-                        <h2 class="section-title" data-category="Piano Learning">
-                            <a href="piano-knowledge-rep090122.html">
-                                Piano Knowledge Representation and Generalization
-                            </a>
-
-                        </h2>
-                        <p class=blog-text id="learning-column">
-                            Read an in-depth project proposal to understand how we represent piano knowledge.
-                        </p>
-                        <hr>
-
-                    </ul>
-                </div>
-
-                <!-- Education Column -->
-                <div class="column" id="education-column">
-                    <h2 class="category-title">Education</h2>
-                    <ul class="post-list">
-                        <h2 class="section-title" data-category="Education">
-                            <a href="the-future-education040723.html">
-                                The Future of Education
-                            </a>
-                        </h2>
-                        <p class=blog-text>
-                            Learn about what the future of education can look like
-                            and how MIDIScale hopes to shape it.
-                        </p>
-                        <hr>
-
-                        <h2 class="section-title" data-category="Education">
-                            <a href="machine-human-learning012323.html">
-                                Machine Learning and Human Learning
-                            </a>
-                        </h2>
-                        <p class=blog-text>
-                            Machine learning won't be able to solve everything. Read why I'm skeptical about its
-                            ability to understand how the human mind learns.
-                        </p>
-                        <hr>
-
-                        <h2 class="section-title" data-category="Education">
-                            <a href="brain-drain111622.html">
-                                Academic Brain Drain
-                            </a>
-                        </h2>
-                        <p class=blog-text>
-                            PhDs are leaving academia in droves. Read about why.
-                        </p>
-                        <hr>
-
-                    </ul>
-                </div>
-
             </div>
         </section>
 
@@ -317,3 +240,4 @@
 
     <script src="https://substackapi.com/widget.js" async></script>
 </body>
+</html>

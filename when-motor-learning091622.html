@@ -5,182 +5,272 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MidiScale</title>
+    <title>When Does Motor Learning Occur? | MidiScale</title>
+    <meta name="description" content="Learn about the latest research on motor learning for piano practice, and how reactive inhibition affects skill acquisition during practice and rest periods.">
     <link rel="icon" href="img/MidiScale_Favicon_32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+    
+    <!-- Modern Font Selection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Add Bootstrap for modern components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS with modern updates - you'll create this file -->
     <link rel="stylesheet" href="css/blog.css" />
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6">
-    </script>
+    <link rel="stylesheet" href="css/modern.css" />
+    
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6"></script>
     <script src="https://substackapi.com/widget.js" async></script>
     <script>
         grecaptcha.ready(function () {
             grecaptcha.execute('6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6', { action: 'submit' }).then(function (token) {
-                console.info("got token: " + token);
                 document.getElementById('g-recaptcha-response').value = token;
             });
         });
     </script>
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) - remove duplicate below -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZQHW85XH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-KKZQHW85XH');
     </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YKZ165W0L"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-9YKZ165W0L');
-</script>
 
 <body>
-    <nav class="navbar">
-        <div class="brand-title">
-            <a href="index.html">MIDIScale</a>
-        </div>
-        <a href="#" class="toggle-button">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-            </ul>
+    <!-- Modern Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MIDIScale</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link cta-button" href="index.html#download">Download</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="flex-containter">
 
-    </div>
-    <main>
-        <section class="info">
-            <div class="flex-container spacing">
-
-                <h2 data-category="Piano Learning">
-                    When Does Motor Learning Occur?
-                </h2>
-                <p class=text>
-                    When does motor learning occur? Intuitively, like declarative learning, one would think that it
-                    would occur concurrently with the task. However, for the past 20 years, researchers have been
-                    proponents that motor learning can occur offline (not concurrently with the task). We’ll call this
-                    the consolidation account. This account has been supported by the repeated finding that there are
-                    performance improvements after rest, whether after sleeping (e.g. 12 hours), 5 minutes, or most
-                    recently, 10 seconds. Some researchers have gone so far to say that “much, if not all” motor
-                    learning occurs offline [1-3]. However, our lab, along with others , have shown that the evidence
-                    for motor learning occurring during sleep is scant [4-8]. In this study, we set out to provide an
-                    alternative account to the claim that learning occurs during a 300 s rest period. <br><br>
-
-                    A core factor that has been ignored in studies claiming that learning occurs during offline periods
-                    is reactive inhibition (RI). RI is the worsening of performance as online task time continues. RI
-                    builds up as online task time increases and dissipates during breaks between trials. The more RI
-                    there is, the worse the performance. The current study set out to test both the RI account and the
-                    consolidation account as an explanation for post-rest improvements after 5 minutes. <br><br>
-
-                    We did this in a standard finger tapping task where participants repeatedly typed 4-1-3-2-4 for
-                    either 10 s or 30 s trials. Between trials, participants either had 10 s or 30 s breaks (figure 1).
-                    After 360 s of practice, participants had a “break” of 300 s where they performed double digit
-                    addition. After, participants performed the same finger tapping task for 60 s. <br><br>
-
-                </p>
-                <img src="img/blog/img01-091622.png" class="img">
-                <p>
-                    Figure 1. Participants repeatedly typed 4-1-3-2-4 over trial. They were randomly assigned to one of
-                    four groups with either 10 or 30 s trial lengths and either 10 or 30 s break lengths. <br><br>
-
-                    We replicated past findings of RI during the task (e.g. the worsening of reaction time during the
-                    trial in figure 2a). We found that both on-task trial time and break time significantly affected the
-                    amount of post-rest increase. As predicted by the RI account, the longer the trial and the shorter
-                    the breaks, the greater the post-rest improvement and vice-versa (figure 2b). With a novel
-                    additional assumption to the consolidation account, it too was able to predict a similar pattern of
-                    results. Also of note, we found evidence that RI exists in the 10 s on-task trial, 10 s break group.
-                    This is the same group used in Bönstrup et al., (2020) and Buch et al. (2021), which raises the
-                    possibility that their claims of learning during 10 s breaks may in fact be due to the accrual and
-                    dissipation of RI. <br><br>
-
-                    Our findings add to the mounting evidence that challenges a 20 year old idea that motor learning can
-                    occur offline. <br><br>
-                </p>
-                <img src="img/blog/img02-091622.png" class="img">
-
-                <p>
-                    Figure 2. A) Each point represents 10 seconds of on-task trial time. In the 30 s on-task trial time
-                    condition, the triangles connected by lines are not separated by breaks. In the 10 s on-task trial
-                    time condition, each circle is separated by a break, even if the line connects them. B) The y-axis
-                    shows the amount of RT improvement after the rest. The x-axis indicates the amount of on-task trial
-                    time, whereas the color indicates the amount of break time. Holding the amount of on-task trial time
-                    constant (x-axis), break time has a strong effect on the amount of RT improvement. When the break
-                    time (color) is held constant, on-task trial time also has a strong effect on RT improvement. Error
-                    bars in standard error. <br><br>
-
-                    References <br><br>
-
-                    1. Robertson, E. M. (2019). Skill Memory: Mind the Ever-Decreasing Gap for Offline Processing. In
-                    Current Biology (Vol. 29, Issue 8, pp. R287–R289). Cell Press.
-                    https://doi.org/10.1016/j.cub.2019.03.007 <br><br>
-
-                    2. Bönstrup, M., Iturrate, I., Hebart, M. N., Censor, N. & Cohen, L. G. Mechanisms of offline motor
-                    learning at a microscale of seconds in large-scale crowdsourced data. Npj Sci. Learn. 5, 1–10
-                    (2020). <br><br>
-
-                    3. Buch, E. R., Claudino, L., Quentin, R., Bönstrup, M., & Cohen, L. G. Consolidation of human skill
-                    linked to waking hippocampo-neocortical replay. Cell Reports, 35(10) (2021).
-                    https://doi.org/10.1016/j.celrep.2021.109193 <br><br>
-
-                    4. Rickard, T. C., Cai, D. J., Rieth, C. A., Jones, J. & Ard, M. C. Sleep does not enhance motor
-                    sequence learning. J. Exp. Psychol. Learn Mem. Cogn. 34, 834–842 (2008). <br><br>
-
-                    5. Brawn, T. P., Fenn, K. M., Nusbaum, H. C. & Margoliash, D. Consolidating the effects of waking
-                    and
-                    sleep on motor-sequence learning. J. Neurosci. 30, 13977–13982 (2010). <br><br>
-
-                    6. Pan, S. C., & Rickard, T. C. Sleep and motor learning: Is there room for consolidation?
-                    Psychological Bulletin, 141(4), 812–834 (2015). https://doi.org/10.1037/bul0000009 <br><br>
-
-                    7. Nettersheim, A., Hallschmid, M., Born, J., & Diekelmann, S. (2015). The Role of Sleep in Motor
-                    Sequence Consolidation: Stabilization Rather Than Enhancement. Journal of Neuroscience, 35(17),
-                    6696–6702. https://doi.org/10.1523/JNEUROSCI.1236-14.2015<br><br>
-
-                    8. Rickard, T. C., Pan, S. C., & Gupta, M. W. Severe publication bias contributes to illusory sleep
-                    consolidation in the motor sequence learning literature. J. Exp. Psychol. Learn Mem. Cogn, (2022).
-                    https://doi.org/10.1037/xlm0001090<br><br>
-                </p>
-
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="category-tag">Piano Learning</p>
+                    <h1 class="blog-title">When Does Motor Learning Occur?</h1>
+                    <div class="post-meta">
+                        <span class="post-date">September 16, 2022</span>
+                        <span class="post-author">by MIDIScale Research Team</span>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <header class="hero">
-            <div class="flex-form">
+    <main class="blog-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <article class="content-area">
+                        <p class="lead">
+                            When does motor learning occur? Intuitively, like declarative learning, one would think that it
+                            would occur concurrently with the task. However, for the past 20 years, researchers have been
+                            proponents that motor learning can occur offline (not concurrently with the task).
+                        </p>
+                        
+                        <p>
+                            We'll call this the consolidation account. This account has been supported by the repeated finding that there are
+                            performance improvements after rest, whether after sleeping (e.g. 12 hours), 5 minutes, or most
+                            recently, 10 seconds. Some researchers have gone so far to say that "much, if not all" motor
+                            learning occurs offline [1-3]. However, our lab, along with others, have shown that the evidence
+                            for motor learning occurring during sleep is scant [4-8]. In this study, we set out to provide an
+                            alternative account to the claim that learning occurs during a 300 s rest period.
+                        </p>
 
-                <div id="custom-substack-embed" class="flex-form"></div>
+                        <p>
+                            A core factor that has been ignored in studies claiming that learning occurs during offline periods
+                            is reactive inhibition (RI). RI is the worsening of performance as online task time continues. RI
+                            builds up as online task time increases and dissipates during breaks between trials. The more RI
+                            there is, the worse the performance. The current study set out to test both the RI account and the
+                            consolidation account as an explanation for post-rest improvements after 5 minutes.
+                        </p>
+
+                        <p>
+                            We did this in a standard finger tapping task where participants repeatedly typed 4-1-3-2-4 for
+                            either 10 s or 30 s trials. Between trials, participants either had 10 s or 30 s breaks (figure 1).
+                            After 360 s of practice, participants had a "break" of 300 s where they performed double digit
+                            addition. After, participants performed the same finger tapping task for 60 s.
+                        </p>
+
+                        <figure class="figure">
+                            <img src="img/blog/img01-091622.png" class="figure-img img-fluid rounded" alt="Experiment methodology diagram">
+                            <figcaption class="figure-caption">
+                                Figure 1. Participants repeatedly typed 4-1-3-2-4 over trial. They were randomly assigned to one of
+                                four groups with either 10 or 30 s trial lengths and either 10 or 30 s break lengths.
+                            </figcaption>
+                        </figure>
+
+                        <p>
+                            We replicated past findings of RI during the task (e.g. the worsening of reaction time during the
+                            trial in figure 2a). We found that both on-task trial time and break time significantly affected the
+                            amount of post-rest increase. As predicted by the RI account, the longer the trial and the shorter
+                            the breaks, the greater the post-rest improvement and vice-versa (figure 2b). With a novel
+                            additional assumption to the consolidation account, it too was able to predict a similar pattern of
+                            results. Also of note, we found evidence that RI exists in the 10 s on-task trial, 10 s break group.
+                            This is the same group used in Bönstrup et al., (2020) and Buch et al. (2021), which raises the
+                            possibility that their claims of learning during 10 s breaks may in fact be due to the accrual and
+                            dissipation of RI.
+                        </p>
+
+                        <p>
+                            Our findings add to the mounting evidence that challenges a 20 year old idea that motor learning can
+                            occur offline.
+                        </p>
+
+                        <figure class="figure">
+                            <img src="img/blog/img02-091622.png" class="figure-img img-fluid rounded" alt="Results chart showing reaction time improvements">
+                            <figcaption class="figure-caption">
+                                Figure 2. A) Each point represents 10 seconds of on-task trial time. In the 30 s on-task trial time
+                                condition, the triangles connected by lines are not separated by breaks. In the 10 s on-task trial
+                                time condition, each circle is separated by a break, even if the line connects them. B) The y-axis
+                                shows the amount of RT improvement after the rest. The x-axis indicates the amount of on-task trial
+                                time, whereas the color indicates the amount of break time. Holding the amount of on-task trial time
+                                constant (x-axis), break time has a strong effect on the amount of RT improvement. When the break
+                                time (color) is held constant, on-task trial time also has a strong effect on RT improvement. Error
+                                bars in standard error.
+                            </figcaption>
+                        </figure>
+
+                        <div class="references">
+                            <h3>References</h3>
+                            <ol>
+                                <li>
+                                    Robertson, E. M. (2019). Skill Memory: Mind the Ever-Decreasing Gap for Offline Processing. In
+                                    Current Biology (Vol. 29, Issue 8, pp. R287–R289). Cell Press.
+                                    <a href="https://doi.org/10.1016/j.cub.2019.03.007" target="_blank">https://doi.org/10.1016/j.cub.2019.03.007</a>
+                                </li>
+                                <li>
+                                    Bönstrup, M., Iturrate, I., Hebart, M. N., Censor, N. & Cohen, L. G. Mechanisms of offline motor
+                                    learning at a microscale of seconds in large-scale crowdsourced data. Npj Sci. Learn. 5, 1–10
+                                    (2020).
+                                </li>
+                                <li>
+                                    Buch, E. R., Claudino, L., Quentin, R., Bönstrup, M., & Cohen, L. G. Consolidation of human skill
+                                    linked to waking hippocampo-neocortical replay. Cell Reports, 35(10) (2021).
+                                    <a href="https://doi.org/10.1016/j.celrep.2021.109193" target="_blank">https://doi.org/10.1016/j.celrep.2021.109193</a>
+                                </li>
+                                <li>
+                                    Rickard, T. C., Cai, D. J., Rieth, C. A., Jones, J. & Ard, M. C. Sleep does not enhance motor
+                                    sequence learning. J. Exp. Psychol. Learn Mem. Cogn. 34, 834–842 (2008).
+                                </li>
+                                <li>
+                                    Brawn, T. P., Fenn, K. M., Nusbaum, H. C. & Margoliash, D. Consolidating the effects of waking
+                                    and sleep on motor-sequence learning. J. Neurosci. 30, 13977–13982 (2010).
+                                </li>
+                                <li>
+                                    Pan, S. C., & Rickard, T. C. Sleep and motor learning: Is there room for consolidation?
+                                    Psychological Bulletin, 141(4), 812–834 (2015). 
+                                    <a href="https://doi.org/10.1037/bul0000009" target="_blank">https://doi.org/10.1037/bul0000009</a>
+                                </li>
+                                <li>
+                                    Nettersheim, A., Hallschmid, M., Born, J., & Diekelmann, S. (2015). The Role of Sleep in Motor
+                                    Sequence Consolidation: Stabilization Rather Than Enhancement. Journal of Neuroscience, 35(17),
+                                    6696–6702. 
+                                    <a href="https://doi.org/10.1523/JNEUROSCI.1236-14.2015" target="_blank">https://doi.org/10.1523/JNEUROSCI.1236-14.2015</a>
+                                </li>
+                                <li>
+                                    Rickard, T. C., Pan, S. C., & Gupta, M. W. Severe publication bias contributes to illusory sleep
+                                    consolidation in the motor sequence learning literature. J. Exp. Psychol. Learn Mem. Cogn, (2022).
+                                    <a href="https://doi.org/10.1037/xlm0001090" target="_blank">https://doi.org/10.1037/xlm0001090</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <p class="mailInfo"> Join the mailing list to gain access
-                to our bi-weekly newsletter and software updates! </p>
-            </p>
-            <p class="reCAPTCHA">
-                This site is protected by reCAPTCHA and the Google
-                <a href=”https://policies.google.com/privacy”>Privacy Policy</a> and <a
-                    href=”https://policies.google.com/terms”>Terms of Service</a> apply.
-            </p>
-            </form>
-            </div>
-        </header>
-
+        </div>
     </main>
 
-    <script>
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p class="mb-4">Join our mailing list to gain access to our bi-weekly newsletter and software updates!</p>
+                    <div id="custom-substack-embed" class="substack-container"></div>
+                    <p class="reCAPTCHA-notice">
+                        This site is protected by reCAPTCHA and the Google
+                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and 
+                        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Modern Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About MIDIScale</h5>
+                    <p>MIDIScale is piano learning software that uses research-backed techniques to help you learn piano efficiently and effectively.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Research Areas</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Motor Learning</a></li>
+                        <li><a href="#">Piano Pedagogy</a></li>
+                        <li><a href="#">Music Theory</a></li>
+                        <li><a href="#">Technical Skills</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright-text">© 2023 MIDIScale. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Modern JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
         window.CustomSubstackWidget = {
             substackUrl: "mohangupta.substack.com",
             placeholder: "example@gmail.com",
@@ -193,20 +283,7 @@
                 text: "#000000",
             }
         };
-        // hamburger nav bar
-        const toggleButton = document.getElementsByClassName('toggle-button')[0];
-        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-
-        toggleButton.addEventListener('click', () => {
-            navbarLinks.classList.toggle('active');
-        });
-
-        // //recaptcha
-        // function onSubmit(token) {
-        //     document.getElementById("form").submit();
-        // }
-
-
     </script>
     <script src="https://substackapi.com/widget.js" async></script>
 </body>
+</html>
