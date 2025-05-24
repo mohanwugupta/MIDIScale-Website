@@ -369,39 +369,61 @@ body {
     border-color: var(--primary-color);
 }
 
-/* Add to your modern.css file */
-.card {
+/* Blog Page Animations */
+
+/* Header animation */
+.blog-overview-header h1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.blog-overview-header p.lead {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards 0.2s;
+}
+
+/* Category pills animation */
+.category-filter .nav-link {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease forwards;
+  transition: all 0.3s ease;
+}
+
+.category-filter .nav-link:nth-child(1) { animation-delay: 0.3s; }
+.category-filter .nav-link:nth-child(2) { animation-delay: 0.4s; }
+.category-filter .nav-link:nth-child(3) { animation-delay: 0.5s; }
+.category-filter .nav-link:nth-child(4) { animation-delay: 0.6s; }
+.category-filter .nav-link:nth-child(5) { animation-delay: 0.7s; }
+
+/* Blog cards animation */
+.blog-categories .card {
+  opacity: 0;
+  transform: translateY(30px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.blog-categories.in-view .card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Staggered card animations */
+.blog-categories.in-view .col-md-6:nth-child(1) .card { animation-delay: 0.1s; }
+.blog-categories.in-view .col-md-6:nth-child(2) .card { animation-delay: 0.2s; }
+.blog-categories.in-view .col-md-6:nth-child(3) .card { animation-delay: 0.3s; }
+.blog-categories.in-view .col-md-6:nth-child(4) .card { animation-delay: 0.4s; }
+.blog-categories.in-view .col-md-6:nth-child(5) .card { animation-delay: 0.5s; }
+.blog-categories.in-view .col-md-6:nth-child(6) .card { animation-delay: 0.6s; }
+
+/* Card hover effects */
+.blog-categories .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
 }
 
-/* Staggered entrance for cards */
-.how-to-section .card {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.how-to-section.in-view .card {
-  animation: fadeInUp 0.6s ease forwards;
-}
-
-.how-to-section.in-view .card:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.how-to-section.in-view .card:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-.how-to-section.in-view .card:nth-child(4) {
-  animation-delay: 0.6s;
-}
-
-/* Keyframes */
+/* Keyframe animation */
 @keyframes fadeInUp {
   to {
     opacity: 1;

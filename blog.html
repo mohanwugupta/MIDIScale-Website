@@ -299,5 +299,44 @@
         });
     </script>
     <script src="https://substackapi.com/widget.js" async></script>
+
+    <!-- Animation Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Intersection Observer for scroll animations
+        const sectionsToAnimate = document.querySelectorAll('.blog-categories, .newsletter-section');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        sectionsToAnimate.forEach(section => {
+          observer.observe(section);
+        });
+        
+        // Add smooth hover effect to category pills
+        const categoryPills = document.querySelectorAll('.category-filter .nav-link');
+        categoryPills.forEach(pill => {
+          pill.addEventListener('mouseenter', () => {
+            if (!pill.classList.contains('active')) {
+              pill.style.transform = 'translateY(-2px)';
+              pill.style.boxShadow = '0 3px 5px rgba(0, 0, 0, 0.1)';
+            }
+          });
+          
+          pill.addEventListener('mouseleave', () => {
+            if (!pill.classList.contains('active')) {
+              pill.style.transform = 'translateY(0)';
+              pill.style.boxShadow = '';
+            }
+          });
+        });
+      });
+    </script>
 </body>
 </html>
