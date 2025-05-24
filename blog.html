@@ -6,112 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Blog | MIDIScale</title>
+    <meta name="description" content="Latest articles on piano learning, music theory, and educational research from the MIDIScale team." />
     <link rel="icon" href="img/MidiScale_Favicon_32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- Modern Font Selection -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-<!-- Add Bootstrap for modern components -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom CSS with modern updates -->
-<link rel="stylesheet" href="css/modern.css" />
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6">
-    </script>
-    <script src="https://substackapi.com/widget.js" async></script>
+    
+    <!-- Font and style imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/modern.css" />
+    
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6"></script>
     <script>
         grecaptcha.ready(function () {
             grecaptcha.execute('6Le7ZXUhAAAAAACFnuPN4R9z9W-rlbvYzYl_TfG6', { action: 'submit' }).then(function (token) {
-                console.info("got token: " + token);
                 document.getElementById('g-recaptcha-response').value = token;
             });
         });
     </script>
-
-    <!-- Google tag (gtag.js) -->
+    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZQHW85XH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-KKZQHW85XH');
     </script>
-
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YKZ165W0L"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-9YKZ165W0L');
-</script>
 
 <body>
-    <nav class="navbar">
-        <div class="brand-title">
-            <a href="index.html">
-                <img src="img/MidiScale_Logo.png" alt="MIDIScale Logo" style="width: 100px; height: 50px;">
-            </a>
-        </div>
-        <a href="#" class="toggle-button">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MIDIScale</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link cta-button" href="index.html#download">Download</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="flex-containter">
 
-        <header class="hero">
-
-
-            <h1 class="primary-title MIDIScale">MIDIScale's Blog</h1><br />
-
-            <br>
-            <!-- <div class="flex-form"> -->
-
-            <div id="custom-substack-embed" class="flex-form"></div>
-            <!-- </div> -->
-            <p class="mailInfo"> Join the mailing list to gain access
-                to our bi-weekly newsletter and software updates! </p>
-            </p>
-            <p class="reCAPTCHA">
-                This site is protected by reCAPTCHA and the Google
-                <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a
-                    href="https://policies.google.com/terms">Terms of Service</a> apply.
-            </p>
-    </div>
-    </header>
-
-
-    </div>
-    <main>
-        <!-- Blog Header -->
-        <header class="blog-overview-header py-5 bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <h1 class="display-4 fw-bold">MIDIScale Blog</h1>
-                        <p class="lead">Insights on piano learning, music theory, and educational research</p>
-                    </div>
+    <!-- Blog Header -->
+    <header class="blog-overview-header py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">MIDIScale Blog</h1>
+                    <p class="lead">Insights on piano learning, music theory, and educational research</p>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
+    <main>
         <!-- Blog Categories -->
         <section class="blog-categories py-5">
             <div class="container">
@@ -175,98 +133,123 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Add more blog post cards -->
+                    
+                    <!-- Motor Learning Post -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">Piano Learning</span>
+                                <h2 class="card-title h5">
+                                    <a href="when-motor-learning091622.html">When Does Motor Learning Occur?</a>
+                                </h2>
+                                <p class="card-text">Research on motor learning for piano practice and how reactive inhibition affects skill acquisition.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">September 16, 2022</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reactive Inhibition Post -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">Piano Learning</span>
+                                <h2 class="card-title h5">
+                                    <a href="what-is-ri050123.html">What is Reactive Inhibition?</a>
+                                </h2>
+                                <p class="card-text">Understand how reactive inhibition affects your piano practice sessions.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">May 1, 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Future Education Post -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-secondary mb-2">Education</span>
+                                <h2 class="card-title h5">
+                                    <a href="the-future-education040723.html">The Future of Education</a>
+                                </h2>
+                                <p class="card-text">How technology and research are transforming educational approaches.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <small class="text-muted">April 7, 2023</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- Modern Footer -->
-<footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <h5>About MIDIScale</h5>
-                <p>MIDIScale is piano learning software that uses research-backed techniques to help you learn piano efficiently and effectively.</p>
-            </div>
-            <div class="col-md-2 mb-4">
-                <h5>Pages</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="FAQ.html">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 mb-4">
-                <h5>Research Areas</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Motor Learning</a></li>
-                    <li><a href="#">Piano Pedagogy</a></li>
-                    <li><a href="#">Music Theory</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 mb-4">
-                <h5>Connect</h5>
-                <ul class="list-unstyled">
-                    <li><a href="mailto:info@midiscale.com">Contact Us</a></li>
-                </ul>
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p class="mb-4">Join our mailing list to gain access to our bi-weekly newsletter and software updates!</p>
+                    <div id="custom-substack-embed" class="substack-container"></div>
+                    <p class="reCAPTCHA-notice">
+                        This site is protected by reCAPTCHA and the Google
+                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and 
+                        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                    </p>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <p class="copyright-text">© 2023 MIDIScale. All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </section>
 
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About MIDIScale</h5>
+                    <p>MIDIScale is piano learning software that uses research-backed techniques to help you learn piano efficiently and effectively.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Research Areas</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Motor Learning</a></li>
+                        <li><a href="#">Piano Pedagogy</a></li>
+                        <li><a href="#">Music Theory</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:info@midiscale.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright-text">© 2023 MIDIScale. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
-
-        // hamburger nav bar
-        const toggleButton = document.getElementsByClassName('toggle-button')[0];
-        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-
-        toggleButton.addEventListener('click', () => {
-            navbarLinks.classList.toggle('active');
-        });
-        // Define a list of blog categories
-        const categories = ['Music Theory', 'MIDI Controllers', 'Piano Learning', 'Education'];
-
-        // // Add an event listener to the category filter dropdown
-        // categoryFilter.addEventListener('change', () => {
-        //     // Get the selected category
-        //     const selectedCategory = categoryFilter.value;
-
-        //     // Filter and categorize the posts into the appropriate columns
-        //     blogSection.querySelectorAll('h2').forEach(postTitle => {
-        //         const category = postTitle.getAttribute('data-category');
-        //         const postContainer = postTitle.parentElement;
-
-        //         if (selectedCategory === 'All' || category.includes(selectedCategory)) {
-        //             // Display the post in the appropriate column
-        //             switch (category) {
-        //                 case 'Music Theory':
-        //                     document.getElementById('music-theory-column').querySelector('ul').appendChild(postContainer);
-        //                     break;
-        //                 case 'MIDI Controllers':
-        //                     document.getElementById('midi-controllers-column').querySelector('ul').appendChild(postContainer);
-        //                     break;
-        //                 case 'Piano Learning':
-        //                     document.getElementById('learning-column').querySelector('ul').appendChild(postContainer);
-        //                     break;
-        //                 case 'Education':
-        //                     document.getElementById('learning-column').querySelector('ul').appendChild(postContainer);
-        //                     break;
-        //             }
-        //         }
-        //     });
-        // });
+        // Set up Substack widget
         window.CustomSubstackWidget = {
             substackUrl: "mohangupta.substack.com",
             placeholder: "example@gmail.com",
@@ -279,17 +262,42 @@
                 text: "#000000",
             }
         };
-
-
-        // //recaptcha
-        // function onSubmit(token) {
-        //     document.getElementById("form").submit();
-        // }
-
-
+        
+        // Set up category filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryLinks = document.querySelectorAll('.category-filter .nav-link');
+            
+            categoryLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    categoryLinks.forEach(item => item.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('href').replace('#', '');
+                    filterPosts(category);
+                });
+            });
+            
+            function filterPosts(category) {
+                const allPosts = document.querySelectorAll('.blog-categories .card');
+                
+                allPosts.forEach(post => {
+                    const badge = post.querySelector('.badge');
+                    const postCategory = badge.textContent.toLowerCase();
+                    
+                    if (category === 'all' || postCategory.includes(category.replace('-', ' '))) {
+                        post.parentElement.style.display = 'block';
+                    } else {
+                        post.parentElement.style.display = 'none';
+                    }
+                });
+            }
+        });
     </script>
-
-
     <script src="https://substackapi.com/widget.js" async></script>
 </body>
 </html>
