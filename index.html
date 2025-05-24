@@ -246,6 +246,36 @@
         macButton.addEventListener('click', function() {
             window.location.href = 'https://github.com/mohanwugupta/midiscale-website/raw/main/downloads/mac/MIDIScale.zip';
         });
+
+        // Intersection Observer for scroll animations
+        const sections = document.querySelectorAll('.how-to-section, .newsletter-section');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Enhanced button hover effect
+        const ctaButtons = document.querySelectorAll('.btn');
+        ctaButtons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.style.transform = 'translateY(-3px)';
+                button.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            });
+            
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = 'translateY(0)';
+                button.style.boxShadow = '';
+            });
+        });
     </script>
 </body>
 </html>

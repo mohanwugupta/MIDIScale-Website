@@ -33,10 +33,27 @@ body {
     color: var(--dark-color);
     padding: 10px 15px;
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--bs-primary);
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
     color: var(--primary-color);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .navbar-nav .nav-link.active {
@@ -45,13 +62,8 @@ body {
 }
 
 .navbar-nav .nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 15px;
-    right: 15px;
-    height: 2px;
-    background-color: var(--primary-color);
+    width: 100%;
+    left: 0;
 }
 
 .cta-button {
@@ -232,6 +244,18 @@ body {
     background-color: var(--light-color);
 }
 
+.hero-section h1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-section p.lead {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards 0.2s;
+}
+
 /* Team page styles */
 .team-member-image {
     max-width: 250px;
@@ -319,6 +343,12 @@ body {
     margin: 30px 0;
 }
 
+.download-buttons {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards 0.4s;
+}
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -337,6 +367,46 @@ body {
 .btn-outline-primary:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
+}
+
+/* Add to your modern.css file */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Staggered entrance for cards */
+.how-to-section .card {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.how-to-section.in-view .card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.how-to-section.in-view .card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.how-to-section.in-view .card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.how-to-section.in-view .card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive */
@@ -374,4 +444,13 @@ body {
     .figure-caption {
         font-size: 14px;
     }
+}
+
+/* Reduce motion for animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
