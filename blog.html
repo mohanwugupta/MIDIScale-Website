@@ -289,7 +289,7 @@
                     const badge = post.querySelector('.badge');
                     const postCategory = badge.textContent.toLowerCase();
                     
-                    if (category === 'all' || postCategory.includes(category.replace('-', ' '))) {
+                    if (category === 'all' || postCategory === category.replace('-', ' ').toLowerCase()) {
                         post.parentElement.style.display = 'block';
                     } else {
                         post.parentElement.style.display = 'none';
