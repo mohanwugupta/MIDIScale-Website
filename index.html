@@ -212,37 +212,13 @@
         };
 
         const windowsButton = document.querySelector('#windowsButton');
-        windowsButton.addEventListener('click', function () {
-            const fileUrl = 'https://www.midiscale.com/downloads/windows/MIDIScale.exe';
-            const fileName = 'MIDIScale.exe';
-            fetch(fileUrl)
-                .then(response => response.blob())
-                .then(blob => {
-                    const a = document.createElement('a');
-                    const url = window.URL.createObjectURL(blob);
-                    a.href = url;
-                    a.download = fileName;
-                    a.click();
-                    window.URL.revokeObjectURL(url);
-                })
-                .catch(error => console.error(error));
+        windowsButton.addEventListener('click', function() {
+            window.location.href = 'https://github.com/yourusername/yourrepo/raw/main/downloads/windows/MIDIScale.exe';
         });
 
         const macButton = document.querySelector('#macButton');
-        macButton.addEventListener('click', function () {
-            const fileUrl = 'https://www.midiscale.com/downloads/mac/MIDIScale.zip';
-            const fileName = 'MIDIScale.zip';
-            fetch(fileUrl)
-                .then(response => response.blob())
-                .then(blob => {
-                    const a = document.createElement('a');
-                    const url = window.URL.createObjectURL(blob);
-                    a.href = url;
-                    a.download = fileName;
-                    a.click();
-                    window.URL.revokeObjectURL(url);
-                })
-                .catch(error => console.error(error));
+        macButton.addEventListener('click', function() {
+            window.location.href = 'https://github.com/yourusername/yourrepo/raw/main/downloads/mac/MIDIScale.zip';
         });
     </script>
 </body>
